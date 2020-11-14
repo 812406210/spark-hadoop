@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="elasticsearch" />
+        <module name="spark" />
+        <module name="hadoop" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="elasticsearch" target="1.8" />
+      <module name="hadoop" target="1.8" />
+      <module name="spark" target="1.8" />
+      <module name="spark-hadoop" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elasticsearch" options="" />
+      <module name="hadoop" options="" />
+      <module name="spark" options="" />
+      <module name="spark-hadoop" options="-parameters" />
+    </option>
+  </component>
+</project>
